@@ -1,0 +1,15 @@
+{
+	"server": "irc.freenode.net",
+	"server_key": "",
+	"port": 6667,
+	"ssl": false,
+	"user": "your_bot_user",
+	"password": "password",
+	"nick": "decloaker6969",
+	"ident": "haha!",
+	"realname": "",
+	"decloak_channel": "#hideout_with_privs",
+	"duck_channel": "##channel_to_control_bot",
+	"channels": "",
+	"delay": 0.2
+}
