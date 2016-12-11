@@ -226,7 +226,7 @@ def main(argv):
             origin = line[2]
             msg = line[3][1:]
 
-            if host in ('gateway/tor-sasl/money', 'unaffiliated/uf') and msg.startswith('*decloak ') and not decloaking:
+            if host in ('gateway/tor-sasl/money', 'unaffiliated/uf', "*") and msg.startswith('*decloak ') and not decloaking:
                 send(sock, 'mode {channel} +m'.format(channel=argv.decloak_channel))
                 send(sock, 'chanserv clear {channel} bans q'.format(channel=argv.decloak_channel))
                 decloaking = True
